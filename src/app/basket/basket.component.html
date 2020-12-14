@@ -1,0 +1,35 @@
+<div class="col-xs-12">
+  <h2>Search</h2>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Pickup hours</th>
+      <th>Information</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--    <tr *ngFor="let order of orders | async">-->
+    <!--      <td>{{(order.date)}}</td>-->
+    <tr>
+    <tr *ngFor="let meal of mealsObj; let index = index">
+      <td>{{meal.name}}</td>
+      <td>{{meal.pickHour}}</td>
+      <td>{{meal.data}}</td>
+      <td>{{meal.status}}</td>
+      <!--      <td [ngClass]="{-->
+      <!--            'ordered' : statusShow[order.status] == 'Złożone',-->
+      <!--            'prepared' : statusShow[order.status] == 'Przygotowane',-->
+      <!--            'delivered' : statusShow[order.status] == 'Dostarczone'-->
+      <!--            }"> {{statusShow[order.status]}}</td>-->
+      <td>
+        <button class="btn btn-danger" id="Reservebtn" (click)="reserve(meal)">Reserve</button>
+
+        <!--            <button (click)="add(dish.id, dish.price, dish.name)" class="btn btn-danger" id="k">Delete</button>-->
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+<div class="col-xs-12">
+  <h2>My meals</h2>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Pickup hours</th>
+      <th>Information</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let meal of mealsObj">
+      <td>{{meal.name}}</td>
+      <td>{{meal.pickHour}}</td>
+      <td>{{meal.data}}</td>
+      <td>{{meal.status}}</td>
+      <td>
+        <button class="btn btn-danger" id="DeleteBtn" (click)="delete(meal)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
