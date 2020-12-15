@@ -1,1 +1,57 @@
-<p>register works!</p>
+  <div class="col-md-6 offset-md-3 mt-5">
+    <div id="panel">
+      <h1>Registration</h1>
+        <div class="form-group">
+          <input
+            type="text"
+            id="name" class="form-control"
+            ngModel
+            name="name"
+
+
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="surname"
+            class="form-control"
+            ngModel
+            name="surname"
+
+
+            placeholder="Surname"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            id="email" class="form-control"
+            ngModel
+            name="email"
+
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            ngModel
+            name="Password"
+
+            placeholder="Password"
+          />
+        </div>
+        <div>
+          <button class="btn btn-primary" type="submit">
+            REGISTER
+          </button>
+          <button class="btn btn-primary" routerLink="/sign-in" type="button">
+            LOG IN
+          </button>
+        </div>
+    </div>
+  </div>

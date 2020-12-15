@@ -23,7 +23,7 @@ export class BasketComponent implements OnInit {
   ngOnInit(): void {
     this.mealsCol = this.afs.collection('meal', ref => {
         return ref
-          .where('byWho', '==', this.loggedInUser)
+          .where('byWho', '==', 'pncQ6toOoBYpLuiV8jzOf7J4gdx1')
           .where('status', '==', Status.available);
       }
     );
@@ -44,7 +44,7 @@ export class BasketComponent implements OnInit {
     meal.status = Status.reserved;
 
     const mealId = meal.id;
-    delete meal.id;
+    // delete meal.id;
     this.afs.doc('meal/' + mealId).update(meal);
   }
 }

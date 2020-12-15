@@ -1,0 +1,33 @@
+ul {
+  margin-top: 50px;
+}
+
+a{
+  color: #7720da;
+  font-weight: bolder;
+  font: 25px calibri;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+
+#name{
+  font: 40px calibri;
+  marigin-left: 20px
+}
+
+
+#panel{
+  width:1000px;
+  margin: auto auto auto;
+}
+#panel2{
+  height: 100px;
+}
+
+#k2{
+  font: 18px Calibri;
+  text-align: right;
+
+  margin-top: -40px;
+}

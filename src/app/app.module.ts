@@ -23,6 +23,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import {AuthService} from './services/auth.service';
 import {AngularFireAuthModule} from '@angular/fire/auth';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 
 const firebaseConfig = {
@@ -53,6 +54,7 @@ const firebaseConfig = {
     DashboardComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
+    ResetPasswordComponent,
 
   ],
   imports: [

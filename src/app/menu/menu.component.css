@@ -1,0 +1,39 @@
+/*#k{*/
+/*  background-color: white;*/
+/*  color: dimgrey;*/
+/*  border: 2px solid dimgrey;*/
+/*  font: bold 15px Calibri;*/
+/*  margin-top: 5px;*/
+/*  width: 170px;*/
+/*}*/
+#add{
+  width: 180px;
+  height: 50px;
+  background-color: white;
+  color: #7720da;
+  border: 2px solid #7720da	;
+  font: bold 20px Calibri;
+  margin-top: -100px;
+  margin-left: 800px;
+}
+
+
+
+#k{
+  background-color: white;
+  color: darkred;
+  border: 2px solid darkred;
+  font: bold 15px Calibri;
+  margin-top: 5px;
+  width: 80px;
+  margin-left: 20px;
+}
+
+h2{
+  color: #7720da;
+  font-weight: bold;
+  font-family: Calibri;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+

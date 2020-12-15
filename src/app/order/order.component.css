@@ -1,0 +1,52 @@
+#k{
+  background-color: white;
+  color: dimgrey;
+  border: 2px solid dimgrey;
+  font: bold 15px Calibri;
+  margin-top: 5px;
+  width: 80px;
+}
+
+#k2{
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+  font: bold 15px Calibri;
+  margin-top: 5px;
+  width: 80px;
+  margin-left: 20px;
+}
+
+h2{
+  color: #7720da;
+  font-weight: bold;
+  font-family: Calibri;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#margines{
+  width: 1000px;
+  margin: auto auto auto;
+}
+
+#k3{
+  background-color: white;
+  color: darkred;
+  border: 2px solid darkred;
+  font: bold 15px Calibri;
+  margin-top: 5px;
+  width: 100px;
+  margin-left: 20px;
+}
+.ordered {
+  color: dimgray;
+}
+
+.delivered {
+  color: limegreen;
+}
+
+.prepared {
+  color: darkblue;
+}

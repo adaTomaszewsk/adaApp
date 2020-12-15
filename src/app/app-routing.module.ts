@@ -11,6 +11,8 @@ import {BasketComponent} from './basket/basket.component';
 import {CustomerOrdersComponent} from './customer-orders/customer-orders.component';
 import {HistoryComponent} from './history/history.component';
 import {NewMealComponent} from './new-meal/new-meal.component';
+import {RegisterComponent} from './register/register.component';
+import {ResetPasswordComponent} from './reset-password/reset-password.component';
 
 
 
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'register-user', component: SignUpComponent},
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent },
+  {path: 'rejestracja', component: RegisterComponent},
+  {path: 'resetuj', component:  ResetPasswordComponent},
   {path: 'customer', component: CustomerComponent
     , children: [
       {path: '', redirectTo: 'menu', pathMatch: 'full'},
@@ -31,6 +35,8 @@ const routes: Routes = [
     ]
   },
 ];
+
+
 // const appRoutes: Routes = [
 //   {path: 'customer', component: CustomerComponent
 //     , children: [

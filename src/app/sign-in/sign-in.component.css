@@ -4,7 +4,7 @@ h1 {
   font-family: Calibri;
   margin-top: 30px;
   margin-bottom: 50px;
-  margin-left: 25px;
+  margin-left: 40px;
 }
 
 
@@ -30,7 +30,6 @@ button {
   font-weight: bolder;
   display: block;
   font-size: 20px;
-  margin-bottom: 30px;
 }
 button[disabled]{
   width: 180px;
@@ -42,7 +41,6 @@ button[disabled]{
   font-weight: bolder;
   display: block;
   font-size: 20px;
-  margin-bottom: 20px;
 }
 button:hover {
   background-color: #7720da;
@@ -56,7 +54,7 @@ a{
   font: Bold 22px Calibri;
   margin-top: 0px;
   margin-bottom: 10px;
-  margin-left: 25px;
+  margin-left: 40px;
 }
 
 register{
@@ -69,12 +67,15 @@ register{
   font-size: 20px;
   margin-bottom: 30px;
 }
+reset{
+  margin-left: 50px;
 
+}
 
 label {
   display: block;
   width: 280px;
-  margin-left: 25px;
+  margin-left: 40px;
   padding: 10px 5px;
   color: dimgrey;
   text-shadow: 0 0 1px silver;

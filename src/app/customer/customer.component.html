@@ -2,13 +2,13 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="panel2">
   <a class="navbar-brand" href="#" id="name" routerLink="menu">ShareMeal</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
   <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav nav-flex-icons ml-auto" >
       <li class="nav-item">
-        <!--        <a id="k2" class="nav-link" (click)="handleLogout()"><i class="fas fa-sign-out-alt"></i>  Log out</a>-->
+                <a id="k2" class="nav-link" (click)="authService.SignOut()"><i class="fas fa-sign-out-alt"></i>  Log out</a>
       </li>
     </ul>
   </div>
@@ -23,7 +23,7 @@
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="historia"><i class="fas fa-clipboard-list"></i>    O R D E R S</a></li>
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="koszyk"><i class="fas fa-shopping-basket"></i>    S E A R C H</a></li>
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="historia2"><i class="fas fas fas fa-list"></i>    H I S T O R Y</a></li>
-        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="nowe_zamowienie"><i class="fa fa-plus" aria-hidden="true"></i>    A D D__N E W__M E A L</a></li>
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="nowe_zamowienie"><i class="fa fa-plus" ></i>    N E W   M E A L</a></li>
       </ul>
       <hr>
       <router-outlet></router-outlet>
