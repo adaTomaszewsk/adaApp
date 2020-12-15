@@ -16,6 +16,14 @@ import { LoginComponent } from './login/login.component';
 import { NewMealComponent } from './new-meal/new-meal.component';
 import { OrderComponent } from './order/order.component';
 import { RegisterComponent } from './register/register.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
+import {AuthService} from './services/auth.service';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDXxpxn5Lk8IZiyQDtQDbh9QPxnaDml4jE',
@@ -39,7 +47,13 @@ const firebaseConfig = {
     LoginComponent,
     NewMealComponent,
     OrderComponent,
-    RegisterComponent
+    RegisterComponent,
+    SignInComponent,
+    SignUpComponent,
+    DashboardComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -47,8 +61,9 @@ const firebaseConfig = {
     AngularFireDatabaseModule,
     FormsModule,
     AppRoutingModule,
+    AngularFireAuthModule
   ],
-  providers: [AngularFirestore],
+  providers: [AngularFirestore, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

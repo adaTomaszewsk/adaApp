@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
-import {Router} from '@angular/router';
+import { Component } from '@angular/core';
+import {AuthenticationService} from './services/authentication.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,29 @@ import {Router} from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private router: Router) {}
+  constructor(
+    private authenticationService: AuthenticationService
+  ){
+  }
+
+  email: string;
+  password: string;
+
+  signUp() {
+    this.authenticationService.SignUp(this.email, this.password);
+    this.email = '';
+    this.password = '';
+  }
+
+  signIn() {
+    this.authenticationService.SignIn(this.email, this.password);
+    this.email = '';
+    this.password = '';
+  }
+
+  signOut() {
+    this.authenticationService.SignOut();
+  }
+
 }
+

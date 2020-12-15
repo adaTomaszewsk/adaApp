@@ -23,7 +23,7 @@ export class HistoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.mealsCol = this.afs.collection('meal', ref => {
-        return ref.where('byWho', '==', 'pncQ6toOoBYpLuiV8jzOf7J4gdx1')
+        return ref.where('byWho', '==', this.loggedInUser)
           .where('status', '==', Status.created);
       }
     );
@@ -41,6 +41,7 @@ export class HistoryComponent implements OnInit {
   return(meal: Meal) {
     // History-> "Wykonane" userid nasz
     meal.byWho = this.loggedInUser;
+    meal.status = Status.reserved;
 
     const mealId = meal.id;
     delete meal.id;
